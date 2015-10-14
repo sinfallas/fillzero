@@ -1,4 +1,16 @@
-commit e2cb0fd4d5b1a811679fe84631cb757a52994d47 (HEAD, origin/master, origin/HEAD, master)
+commit b8e13026408ba3c42a83641f8c4619e759f71fa5 (HEAD, origin/master, origin/HEAD, master)
+Author: jose perez <sinfallas@gmail.com>
+Date:   Tue Oct 13 21:41:42 2015 -0430
+
+    * se coloca una barra de progreso de yad
+
+commit 0b9d16a0f313b9bc63ccc345e3488fc93050a888
+Author: jose perez <sinfallas@gmail.com>
+Date:   Tue Oct 13 21:22:46 2015 -0430
+
+    * changelog
+
+commit e2cb0fd4d5b1a811679fe84631cb757a52994d47
 Author: jose perez <sinfallas@gmail.com>
 Date:   Tue Oct 13 21:22:30 2015 -0430
 
