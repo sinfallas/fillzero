@@ -1,2 +1,2 @@
 # fillzero
-Script to remove all the information from a device
+Script to remove all the information from one device
