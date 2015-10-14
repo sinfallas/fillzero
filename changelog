@@ -1,4 +1,16 @@
-commit c83654d023d08d574f4a023d7b7604439a65d855 (HEAD, origin/master, origin/HEAD, master)
+commit e47349c1ecf18b2b70c82e28da8bae39fb171cdb (HEAD, origin/master, origin/HEAD, master)
+Author: jose perez <sinfallas@gmail.com>
+Date:   Tue Oct 13 21:14:30 2015 -0430
+
+    * se finaliza la primera version
+
+commit 35ef7056d1915ed8156cca07378a810479d45e42
+Author: jose perez <sinfallas@gmail.com>
+Date:   Tue Oct 13 19:22:39 2015 -0430
+
+    * changelog
+
+commit c83654d023d08d574f4a023d7b7604439a65d855
 Author: jose perez <sinfallas@gmail.com>
 Date:   Tue Oct 13 19:22:11 2015 -0430
 
