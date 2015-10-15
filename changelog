@@ -1,4 +1,22 @@
-commit b8e13026408ba3c42a83641f8c4619e759f71fa5 (HEAD, origin/master, origin/HEAD, master)
+commit 5e1e8d90ced7c3bfd0430ff28f368f56aee6dac7 (HEAD, origin/master, origin/HEAD, master)
+Author: jose perez <sinfallas@gmail.com>
+Date:   Wed Oct 14 21:15:38 2015 -0430
+
+    * se empalma fillzero al script variables
+
+commit f7233fc4b72be570f85b716ac571fa94c61be70e
+Author: jose perez <sinfallas@gmail.com>
+Date:   Tue Oct 13 22:26:04 2015 -0430
+
+    travis
+
+commit 7d9641b1e05fa3a89b62844e33e9d34abab8efd0 (tag: v0.1)
+Author: jose perez <sinfallas@gmail.com>
+Date:   Tue Oct 13 21:42:00 2015 -0430
+
+    * changelog
+
+commit b8e13026408ba3c42a83641f8c4619e759f71fa5
 Author: jose perez <sinfallas@gmail.com>
 Date:   Tue Oct 13 21:41:42 2015 -0430
 
