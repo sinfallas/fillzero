@@ -8,6 +8,7 @@ fi
 trap "rm -f /run/$0.pid; exit" INT TERM EXIT
 echo $BASHPID > /run/$0.pid
 
+source /usr/bin/variables
 if yad --skip-taskbar --fixed --center --text-align=fill --borders=6 --title="NOTIFICACION" --text="Este programa le permitira borrar de forma segura toda la informacion de un dispositivo externo. Para borrar el disco duro local utilice el script DESTRUIR"; then
 	borrar=$(fdisk -l | grep "Disco" | sed '/zram/d' | sed '/loop/d' | awk '{print $2}' | sed 's/.$//g' | yad --center --no-click --list --title="Lista de dispositivos" --text="Seleccione el dispositivo que desea borrar." --separator="" --column 'Dispositivo' --height 380 --width 150 --button="ACEPTAR":0)
 
@@ -20,19 +21,15 @@ if yad --skip-taskbar --fixed --center --text-align=fill --borders=6 --title="NO
 		fi
 	fi
 
-	function progress_1 () {
-		yad --fixed --progress --pulsate --auto-kill --skip-taskbar --center --title="Borrando" --progress-text="Borrando el disco, esto proceso puede tomar varias horas, por favor espere"
-	}
-
 	function borrar_1 () {
 		shred -fz -n 5 $borrar
 		dd if=/dev/urandom of=$borrar bs=4096
 		dd if=/dev/zero of=$borrar iflag=nocache oflag=direct bs=4096
 	}
 
-	borrar_1 | progress_1
+	borrar_1 | $progreso --title="Borrando" --progress-text="Borrando el disco, esto proceso puede tomar varias horas, por favor espere"
 
-	yad --skip-taskbar --button=ACEPTAR:1 --fixed --center --text-align=fill --borders=6 --title="FINALIZADO" --text="Borrado finalizado."
+	$final --text="Borrado finalizado."
 else
 	echo 1 > /dev/null
 fi
