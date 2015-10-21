@@ -6,8 +6,8 @@ if [[ $USER != root ]]; then
 	echo -e "\e[00;31mERROR: DEBES SER ROOT\e[00m"
 	exit 1
 fi
-trap "rm -f /run/$0.pid; exit" INT TERM EXIT
-echo "$BASHPID" > /run/$0.pid
+trap "rm -f /run/fillzero.pid; exit" INT TERM EXIT
+echo "$BASHPID" > /run/fillzero.pid
 
 source /usr/bin/variables
 if yad --skip-taskbar --fixed --center --text-align=fill --borders=6 --title="NOTIFICACION" --text="Este programa le permitira borrar de forma segura toda la informacion de un dispositivo externo. Para borrar el disco duro local utilice el script DESTRUIR"; then
@@ -34,6 +34,6 @@ if yad --skip-taskbar --fixed --center --text-align=fill --borders=6 --title="NO
 else
 	echo 1 > /dev/null
 fi
-rm -f /run/$0.pid
+rm -f /run/fillzero.pid
 trap - INT TERM EXIT
 exit 0
