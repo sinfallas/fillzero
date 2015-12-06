@@ -2,8 +2,8 @@
 # Made by Sinfallas <sinfallas@yahoo.com>
 # Licence: GPL-2
 LC_ALL=C
-trap "rm -f /run/fillzero.pid; exit" INT TERM EXIT
-echo "$BASHPID" > /run/fillzero.pid
+trap "rm -f /run/$(basename $0).pid; exit" INT TERM EXIT
+echo "$BASHPID" > /run/$(basename $0).pid
 source /usr/bin/variables
 
 if yad --skip-taskbar --fixed --center --text-align=fill --borders=6 --title="NOTIFICACION" --text="Este programa le permitira borrar de forma segura toda la informacion de un dispositivo externo. Para borrar el disco duro local utilice el script DESTRUIR"; then
@@ -30,6 +30,6 @@ if yad --skip-taskbar --fixed --center --text-align=fill --borders=6 --title="NO
 else
 	echo 1 > /dev/null
 fi
-rm -f /run/fillzero.pid
+rm -f /run/$(basename $0).pid
 trap - INT TERM EXIT
 exit 0
