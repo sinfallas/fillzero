@@ -1,4 +1,16 @@
-commit c1b8f397cd38d66abef6433582b90ac62641f292 (HEAD, origin/master, origin/HEAD, master)
+commit 70f8d95ed90ae139c76e1b9212ffc0f1f51fa90e (HEAD, origin/master, origin/HEAD, master)
+Author: jose perez <sinfallas@gmail.com>
+Date:   Tue Mar 8 19:24:31 2016 -0430
+
+    * se sustituye dd por cat para hacerlo mas rapido y simple
+
+commit 60c4095301041809ec129517a65bbb7765f03262
+Author: jose perez <sinfallas@gmail.com>
+Date:   Tue Mar 8 13:03:55 2016 -0430
+
+    * changelog
+
+commit c1b8f397cd38d66abef6433582b90ac62641f292
 Author: jose perez <sinfallas@gmail.com>
 Date:   Tue Mar 8 13:03:45 2016 -0430
 
