@@ -15,6 +15,7 @@ if yad --skip-taskbar --fixed --center --text-align=fill --borders=6 --title="NO
 		if [[ $? = 0 ]]; then
 			source $0
 		else
+			rm -f /run/$(basename $0).pid
 			exit 1
 		fi
 	fi
