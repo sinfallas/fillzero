@@ -1,10 +1,28 @@
-commit ab89a1574ad3110f5b2065ae03b396f90b93f75a (HEAD, origin/master, origin/HEAD, master)
+commit 1b9f42e1c7f24c769fdfc996f708fb101da8e52c (HEAD, origin/master, origin/HEAD, master)
+Author: jose perez <sinfallas@gmail.com>
+Date:   Thu Sep 1 17:43:10 2016 -0400
+
+    * se agrega un mensaje de confirmacion antes de empezar el borrado
+
+commit 7a14bf6c29d59aceafb1e8684db0fdc0bde87168
+Author: Jose Perez <sinfallas@users.noreply.github.com>
+Date:   Tue Apr 19 20:27:42 2016 -0430
+
+    Update README.md
+
+commit a23c48ae78557ecdea839370d2a0090d641f8b16
+Author: jose perez <sinfallas@gmail.com>
+Date:   Sun Apr 17 20:32:28 2016 -0430
+
+    * changelog
+
+commit ab89a1574ad3110f5b2065ae03b396f90b93f75a
 Author: jose perez <sinfallas@gmail.com>
 Date:   Sun Apr 17 20:32:20 2016 -0430
 
     * zenodo
 
-commit e837cf8b527d2ce015971f8f02374feaa6fa926d
+commit e837cf8b527d2ce015971f8f02374feaa6fa926d (tag: v0.1.5)
 Author: jose perez <sinfallas@gmail.com>
 Date:   Sat Apr 9 11:05:58 2016 -0430
 
