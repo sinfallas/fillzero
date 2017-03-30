@@ -1,4 +1,16 @@
-commit 1b9f42e1c7f24c769fdfc996f708fb101da8e52c (HEAD, origin/master, origin/HEAD, master)
+commit a2fa8ec3c4410de173a51c96f4b72272c80e740a (HEAD, origin/master, origin/HEAD, master)
+Author: jose perez <sinfallas@gmail.com>
+Date:   Thu Mar 30 14:11:21 2017 -0400
+
+    * se agregan modos de borrado
+
+commit ef8a1b37dfd94505bc75458e1839bb0934f41d29
+Author: jose perez <sinfallas@gmail.com>
+Date:   Thu Sep 1 17:43:32 2016 -0400
+
+    * changelog
+
+commit 1b9f42e1c7f24c769fdfc996f708fb101da8e52c
 Author: jose perez <sinfallas@gmail.com>
 Date:   Thu Sep 1 17:43:10 2016 -0400
 
