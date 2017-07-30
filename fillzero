@@ -6,6 +6,7 @@ LC_ALL=C
 trap "rm -f /run/$(basename $0).pid; exit" 0 1 2 3 15
 echo "$BASHPID" > /run/$(basename $0).pid
 source /usr/bin/variables
+rootyad
 
 if yad --skip-taskbar --fixed --center --text-align=fill --borders=6 --title="NOTIFICACION" --text="Este programa le permitira borrar de forma segura toda la informacion de un dispositivo externo. Para borrar el disco duro local utilice el script DESTRUIR"; then
 	borrar=$(fdisk -l | grep "Disco" | sed '/zram/d' | sed '/loop/d' | awk '{print $2}' | sed 's/.$//g' | yad --center --no-click --list --title="Lista de dispositivos" --text="Seleccione el dispositivo que desea borrar." --separator="" --column 'Dispositivo' --height 380 --width 150 --button="ACEPTAR":0)
